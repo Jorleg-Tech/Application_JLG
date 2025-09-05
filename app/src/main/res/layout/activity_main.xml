@@ -1,32 +1,226 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="#ffffff"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+
+    android:id="@+id/RelativeLayout">
 
 
 
     <TextView
-        android:id="@+id/flashcard_question"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:id="@+id/flashcard_question_1"
+        android:layout_width="380dp"
+        android:layout_marginLeft="12dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
         android:gravity="center"
         android:background="@drawable/card_backgrouned"
-        android:textColor="#FFFFFF"
-        android:text="Comment s'appelle le père de la patrie/nation Haïtienne ?"
+        android:elevation="10dp"
+        android:textColor="#0B3041"
+
+        android:text="Comment s'appelle le père de la nation Haïtienne ?"
+        android:textStyle="bold"
         android:textSize="35dp" />
 
     <TextView
-        android:id="@+id/flashcard_answer"
-        android:layout_below="@id/flashcard_question"
-        android:layout_width="match_parent"
-        android:layout_height="90dp"
+        android:id="@+id/flashcard_answer_1_1"
+        android:layout_below="@id/flashcard_answer_1_2"
+        android:layout_marginTop="10dp"
         android:gravity="center"
-        android:background="@drawable/card_background"
-        android:textColor="#000000"
-        android:visibility="invisible"
+        android:elevation="10dp"
+        android:textColor="#ffffff"
+        android:visibility="visible"
         android:text="Jean Jacques Dessalines"
-        android:textSize="40sp" />
+        android:layout_height="55dp"
+        android:textStyle="italic"
+        android:textSize="30dp"
+        android:layout_width="380dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/card_backgrounda"/>
+
+    <TextView
+        android:id="@+id/flashcard_answer_1_2"
+        android:layout_below="@+id/flashcard_question_1"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:elevation="10dp"
+        android:textColor="#ffffff"
+        android:visibility="visible"
+        android:text="Jean Bertrand Aristide"
+        android:layout_height="55dp"
+        android:textStyle="italic"
+        android:textSize="30dp"
+        android:layout_width="380dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/card_backgrounda" />
+
+    <TextView
+        android:id="@+id/flashcard_answer_1_3"
+        android:layout_below="@+id/flashcard_answer_1_1"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:elevation="10dp"
+        android:textColor="#ffffff"
+        android:visibility="visible"
+        android:text="Alexandre Pétion"
+        android:layout_height="55dp"
+        android:textStyle="italic"
+        android:textSize="30dp"
+        android:layout_width="380dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/card_backgrounda" />
+
+
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/flashcard_question_2"
+        android:layout_width="380dp"
+        android:layout_marginLeft="12dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:background="@drawable/card_backgrouned"
+        android:elevation="10dp"
+        android:textColor="#0B3041"
+        android:visibility="invisible"
+
+        android:text="Quelle est la formule chimique de l'eau ?"
+        android:textStyle="bold"
+        android:textSize="35dp" />
+
+    <TextView
+        android:id="@+id/flashcard_answer_2_1"
+        android:layout_below="@id/flashcard_answer_1_2"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:elevation="10dp"
+        android:textColor="#ffffff"
+        android:visibility="invisible"
+        android:text="H2O"
+        android:layout_height="55dp"
+        android:textStyle="italic"
+        android:textSize="30dp"
+        android:layout_width="380dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/card_backgrounda"/>
+
+    <TextView
+        android:id="@+id/flashcard_answer_2_2"
+        android:layout_below="@+id/flashcard_question_2"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:elevation="10dp"
+        android:textColor="#ffffff"
+        android:visibility="invisible"
+        android:text="C2H6"
+        android:layout_height="55dp"
+        android:textStyle="italic"
+        android:textSize="30dp"
+        android:layout_width="380dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/card_backgrounda" />
+
+    <TextView
+        android:id="@+id/flashcard_answer_2_3"
+        android:layout_below="@+id/flashcard_answer_2_1"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:elevation="10dp"
+        android:textColor="#ffffff"
+        android:visibility="invisible"
+        android:text="O3"
+        android:layout_height="55dp"
+        android:textStyle="italic"
+        android:textSize="30dp"
+        android:layout_width="380dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/card_backgrounda" />
+
+
+
+
+
+
+
+
+
+
+
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/flashcard_answer_1_3"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/suivant_icon" />
+
+
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/flashcard_answer_1_3"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/precedent_icon" />
+
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/flashcard_answer_1_3"
+        android:layout_marginTop="190dp"
+        android:gravity="center"
+        app:srcCompat="@drawable/hide_icon" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/flashcard_answer_1_3"
+        android:layout_marginTop="190dp"
+        android:gravity="center"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/show_icon" />
+
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/flashcard_answer_1_3"
+        android:layout_marginTop="190dp"
+        android:gravity="center"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/hide_icon" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/flashcard_answer_1_3"
+        android:layout_marginTop="190dp"
+        android:gravity="center"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/show_icon" />
+
 
 </RelativeLayout>
